@@ -74,14 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-<<<<<<< HEAD
-=======
   ["Comment.nvim.git"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/Comment.nvim.git",
     url = "https://github.com/numToStr/Comment.nvim"
   },
->>>>>>> 8ab5dc6 (first git file)
   LuaSnip = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -125,16 +122,12 @@ _G.packer_plugins = {
   ["cyclist.vim.git"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/cyclist.vim.git",
-<<<<<<< HEAD
     url = "https://github.com/tjdevries/cyclist.vim.git"
-=======
-    url = "https://github.com/tjdevries/cyclist.vim"
   },
   ["fidget.nvim.git"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/fidget.nvim.git",
     url = "https://github.com/j-hui/fidget.nvim"
->>>>>>> 8ab5dc6 (first git file)
   },
   ["firenvim.git"] = {
     loaded = true,
@@ -146,27 +139,21 @@ _G.packer_plugins = {
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-<<<<<<< HEAD
-=======
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
->>>>>>> 8ab5dc6 (first git file)
   harpoon = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
-<<<<<<< HEAD
-=======
   ["inlay-hints.nvim.git"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/inlay-hints.nvim.git",
     url = "https://github.com/simrat39/inlay-hints.nvim"
   },
->>>>>>> 8ab5dc6 (first git file)
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -187,8 +174,6 @@ _G.packer_plugins = {
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-<<<<<<< HEAD
-=======
   ["nvim-dap"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/nvim-dap",
@@ -199,7 +184,6 @@ _G.packer_plugins = {
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
     url = "https://github.com/rcarriga/nvim-dap-ui"
   },
->>>>>>> 8ab5dc6 (first git file)
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/krunal/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

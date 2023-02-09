@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 require("mason").setup()
 require("fidget").setup({
     text = {
@@ -13,7 +11,6 @@ require("fidget").setup({
         border = "rounded",
     },
 })
->>>>>>> 8ab5dc6 (first git file)
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
@@ -64,7 +61,6 @@ lsp.configure('sumneko_lua', {
         }
     }
 })
-<<<<<<< HEAD
 lsp.configure('sumneko_lua', {
     settings = {
         Lua = {
@@ -77,8 +73,6 @@ lsp.configure('sumneko_lua', {
         }
     }
 })
-=======
->>>>>>> 8ab5dc6 (first git file)
 
 lsp.configure('rust_analyzer', {
     settings = {
@@ -89,13 +83,16 @@ lsp.configure('rust_analyzer', {
         }
     }
 })
-<<<<<<< HEAD
-lsp.configure('pyright',{
-        Python = {
-            settings = {
+lsp.configure('pyright', {
+    Python = {
+        settings = {
             hint = {
                 enable = true,
-=======
+            }
+        }
+    }
+})
+
 --enable inlay hints
 lsp.configure('pyright', {
     settings = {
@@ -108,14 +105,11 @@ lsp.configure('pyright', {
                 autoimportCompletions = true,
                 diagnosticsMode = "workspace",
                 useLibraryCodeForTypes = true,
->>>>>>> 8ab5dc6 (first git file)
             }
         }
     }
 })
 
-<<<<<<< HEAD
-=======
 lsp.configure('tsserver', {
     settings = {
         javascript = {
@@ -143,7 +137,6 @@ lsp.configure('tsserver', {
     },
 })
 
->>>>>>> 8ab5dc6 (first git file)
 
 
 lsp.on_attach(function(client, bufnr)
