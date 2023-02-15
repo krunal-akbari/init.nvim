@@ -1,3 +1,5 @@
+-- vim.cmd(": call firenvim#add_site_config('web.whatsapp.com/*')")
+
 local function filre_nvim()
     local name = vim.fn.expand("%:p")
     local paths = vim.split(vim.fn.glob('/run/user/1000/firenvim/*'), '\n')
@@ -13,4 +15,4 @@ local function filre_nvim()
     end
 end
 
-vim.keymap.set('n', '<leader>fp', filre_nvim,{silent = true})
+vim.keymap.set('n', '<leader>fp', filre_nvim, { silent = true })

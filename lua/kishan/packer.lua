@@ -13,6 +13,11 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+
+    use {
+        'https://github.com/joshdick/onedark.vim.git',
+    }
+
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
@@ -26,7 +31,6 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
-
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -36,13 +40,10 @@ return require('packer').startup(function(use)
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
-<<<<<<< HEAD
-=======
             --dap
             { "mfussenegger/nvim-dap" },
             { "rcarriga/nvim-dap-ui" },
 
->>>>>>> 8ab5dc6 (first git file)
             -- Autocompletion
             { 'hrsh7th/nvim-cmp' },
             { 'hrsh7th/cmp-buffer' },
@@ -63,12 +64,18 @@ return require('packer').startup(function(use)
     use("eandrju/cellular-automaton.nvim")
 
 
-    use("tjdevries/cyclist.vim.git")
-    use("https://github.com/glacambre/firenvim.git")
     use("https://github.com/tjdevries/cyclist.vim.git")
     use("https://github.com/simrat39/inlay-hints.nvim.git")
     use("https://github.com/glacambre/firenvim.git")
     use("https://github.com/numToStr/Comment.nvim.git")
     use('lewis6991/gitsigns.nvim')
 
+    -- refactoring
+    use {
+        "ThePrimeagen/refactoring.nvim",
+        requires = {
+            { "nvim-lua/plenary.nvim" },
+            { "nvim-treesitter/nvim-treesitter" }
+        }
+    }
 end)

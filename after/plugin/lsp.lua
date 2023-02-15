@@ -17,7 +17,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     'tsserver',
-    'sumneko_lua',
     'rust_analyzer',
 })
 
@@ -46,31 +45,6 @@ lsp.set_preferences({
         warn = 'W',
         hint = 'H',
         info = 'I'
-    }
-})
-
-lsp.configure('sumneko_lua', {
-    settings = {
-        Lua = {
-            hint = {
-                enable = true,
-            },
-            diagnostics = {
-                globals = { 'vim' }
-            },
-        }
-    }
-})
-lsp.configure('sumneko_lua', {
-    settings = {
-        Lua = {
-            hint = {
-                enable = true,
-            },
-            diagnostics = {
-                globals = { 'vim' }
-            },
-        }
     }
 })
 
