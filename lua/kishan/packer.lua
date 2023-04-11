@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
 
             --dap
             { "mfussenegger/nvim-dap" },
+            { "jay-babu/mason-nvim-dap.nvim" },
             { "rcarriga/nvim-dap-ui" },
 
             -- Autocompletion
@@ -78,4 +79,7 @@ return require('packer').startup(function(use)
             { "nvim-treesitter/nvim-treesitter" }
         }
     }
+    use { "https://github.com/nvim-treesitter/nvim-treesitter-context.git" }
+    use { "https://github.com/ThePrimeagen/git-worktree.nvim.git" }
+    use {'krivahtoo/silicon.nvim', run = './install.sh build'}
 end)

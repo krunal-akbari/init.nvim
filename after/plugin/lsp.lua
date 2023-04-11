@@ -57,15 +57,6 @@ lsp.configure('rust_analyzer', {
         }
     }
 })
-lsp.configure('pyright', {
-    Python = {
-        settings = {
-            hint = {
-                enable = true,
-            }
-        }
-    }
-})
 
 --enable inlay hints
 lsp.configure('pyright', {
@@ -83,6 +74,8 @@ lsp.configure('pyright', {
         }
     }
 })
+
+require'lspconfig'.intelephense.setup{}
 
 lsp.configure('tsserver', {
     settings = {

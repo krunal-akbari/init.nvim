@@ -3,6 +3,9 @@ let g:firenvim_config = {
         \ 'whatsapp.com/*': {
             \ 'selector': '',
         \ },
+        \ 'leetcode.com/*': {
+            \ 'selector': '',
+        \ },
         \ 'stackoverflow.com/*': {
             \ 'selector': '',
         \ }

@@ -4,6 +4,7 @@ if !get(g:, 'loaded_cyclist', v:false)
   finish
 endif
 
+
 call cyclist#add_listchar_option_set('limited', {
         \ 'eol': '↲',
         \ 'tab': '» ',
@@ -26,9 +27,10 @@ call cyclist#add_listchar_option_set('busy', {
         \ })
 
 if $USER == 'krunal'
-  call cyclist#add_listchar_option_set('wsl', {
-          \ 'tab': '» ',
-          \ })
+  " call cyclist#add_listchar_option_set('wsl', {
+  "         \ 'tab': '» ',
+  "         \ })
 
   call cyclist#activate_listchars('limited')
+
 endif
