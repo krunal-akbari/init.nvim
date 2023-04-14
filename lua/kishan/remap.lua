@@ -43,3 +43,17 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
+
+vim.keymap.set(
+    "n",
+    "<leader>gw",
+    ":lua require('telescope').extensions.git_worktree.git_worktrees(require('telescope.themes').get_cursor())<CR>",
+    { silent = true }
+)
+vim.keymap.set(
+    "n",
+    "<leader>cgw",
+    "<cmd> lua require('telescope').load_extension('git_worktree').create_git_worktree(require('telescope.themes').get_dropdown())<Cr>"
+    ,
+    { silent = true }
+)
