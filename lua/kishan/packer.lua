@@ -31,6 +31,7 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    -- use('https://github.com/f-person/git-blame.nvim.git')
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -81,20 +82,19 @@ return require('packer').startup(function(use)
     }
     use { "https://github.com/nvim-treesitter/nvim-treesitter-context.git" }
     use { "https://github.com/ThePrimeagen/git-worktree.nvim.git" }
-    use {'krivahtoo/silicon.nvim', run = './install.sh build'}
+    use { 'krivahtoo/silicon.nvim', run = './install.sh build' }
 
 
-      use({
-      "folke/trouble.nvim",
-      config = function()
-          require("trouble").setup {
-              icons = false,
-              -- your configuration comes here
-              -- or leave it empty to use the default settings
-              -- refer to the configuration section below
-          }
-      end
-  })
-
+    use({
+        "folke/trouble.nvim",
+        config = function()
+            require("trouble").setup {
+                icons = false,
+                -- your configuration comes here
+                -- or leave it empty to use the default settings
+                -- refer to the configuration section below
+            }
+        end
+    })
 
 end)
