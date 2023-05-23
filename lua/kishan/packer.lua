@@ -86,7 +86,6 @@ return require('packer').startup(function(use)
     use { "https://github.com/ThePrimeagen/git-worktree.nvim.git" }
     use { 'krivahtoo/silicon.nvim', run = './install.sh build' }
 
-
     use({
         "folke/trouble.nvim",
         config = function()
@@ -98,5 +97,4 @@ return require('packer').startup(function(use)
             }
         end
     })
-
 end)

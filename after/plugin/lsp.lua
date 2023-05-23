@@ -58,6 +58,8 @@ lsp.configure('rust_analyzer', {
     }
 })
 
+lsp.configure('zls',{})
+
 --enable inlay hints
 lsp.configure('pyright', {
     settings = {

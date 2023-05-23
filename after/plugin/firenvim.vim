@@ -8,6 +8,12 @@ let g:firenvim_config = {
         \ },
         \ 'stackoverflow.com/*': {
             \ 'selector': '',
+        \ },
+        \ 'google.com/*': {
+            \ 'selector': '',
+        \ },
+        \ 'twitch.com/*': {
+            \ 'selector': '',
         \ }
     \ }
 \ }
