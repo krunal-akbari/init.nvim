@@ -84,8 +84,7 @@ return require('packer').startup(function(use)
     }
     use { "https://github.com/nvim-treesitter/nvim-treesitter-context.git" }
     use { "https://github.com/ThePrimeagen/git-worktree.nvim.git" }
-    use { 'krivahtoo/silicon.nvim', run = './install.sh build' }
-
+    use { 'krivahtoo/silicon.nvim', run = './install.sh' }
     use({
         "folke/trouble.nvim",
         config = function()
