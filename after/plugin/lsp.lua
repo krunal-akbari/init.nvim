@@ -58,7 +58,6 @@ lsp.configure('rust_analyzer', {
     }
 })
 
-lsp.configure('zls', {})
 
 --enable inlay hints
 lsp.configure('pyright', {
@@ -77,7 +76,6 @@ lsp.configure('pyright', {
     }
 })
 
-require 'lspconfig'.intelephense.setup {}
 
 lsp.configure('jdtls', {
     settings = {
